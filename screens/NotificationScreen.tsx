@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import Notification from "../Components/Notification";
 
 
 const NotificationScreen = () => {
     return (
-        <Text>Hola mundo</Text>
+        <Notification/>
     )
 }
 

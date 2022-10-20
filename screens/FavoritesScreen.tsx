@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native"; 
+import Favorites from '../Components/Favorites'
 
 const FavoritesScreen = () => {
     return(
-        <Text>Hola mundo</Text>
+        <Favorites/>
     )
 }
 
