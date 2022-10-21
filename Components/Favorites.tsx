@@ -1,6 +1,7 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 
 const Favorites = () => {
     return (
@@ -21,16 +22,24 @@ const Favorites = () => {
                 <View style={styles.Ima}>
                     <Image
                         style={styles.Image}
-                        source={require('../Image/tostadas.jpg')}
+                        source={require('../Image/Imagen1.jpg')}
                     />
                     <View style={styles.Hexagram}>
                         <MaterialCommunityIcons
                             name="hexagram"
                             style={styles.Hexagram1}
                         />
+                        <View style={styles.BookOutline}>
+                            <MaterialCommunityIcons
+                                name="book-outline"
+                                style={styles.BookOutline1}
+                            />
+                        </View>
                         <Text style={styles.Hexagram1}>
                             5,0
                         </Text>
+                        
+
                     </View>
                 </View>
 
@@ -55,7 +64,7 @@ const Favorites = () => {
                 <View style={styles.Ima}>
                     <Image
                         style={styles.Image}
-                        source={require('../Image/Comida-española.jpg')}
+                        source={require('../Image/Imagen2.jpg')}
                     />
                     <View style={styles.Hexagram}>
                         <MaterialCommunityIcons
@@ -89,7 +98,7 @@ const Favorites = () => {
                 <View style={styles.Ima}>
                     <Image
                         style={styles.Image}
-                        source={require('../Image/iStock_93400103_MEDIUM.jpg')}
+                        source={require('../Image/Imagen3.jpeg')}
                     />
                     <View style={styles.Hexagram}>
                         <MaterialCommunityIcons
@@ -119,7 +128,6 @@ const Favorites = () => {
                     />
                     <Text style={styles.Users}>By James Wolden</Text>
                 </View>
-
             </View>
 
         </ScrollView>
@@ -151,7 +159,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 15,
         padding: 5,
-        textAlign: 'center'
+        textAlign: 'center',
     },
     TextRecipe: {
         color: '#EE8B8B',
@@ -170,20 +178,30 @@ const styles = StyleSheet.create({
         height: 20,
         width: 50,
         margin: 10,
-        marginStart: 15,
+        marginStart: 25,
     },
     Hexagram1: {
         fontSize: 15,
         color: 'white',
     },
+    BookOutline: {
+        flex: 1,
+        backgroundColor: '#ffff',
+        borderRadius: 15,
+        height: 16,
+        width: 60,
+    },
+    BookOutline1: {
+        color: '#E65656',
+        fontSize: 12,
+    },
     Ima: {
         marginStart: 20,
     },
     Image: {
-        width: 200,
-        height: 140,
+        width: '90%',
+        height: 190,
         borderRadius: 8,
-        marginStart: 20,
         margin: 5,
     },
     Description: {
@@ -192,12 +210,11 @@ const styles = StyleSheet.create({
     },
     Description1: {
         paddingStart: 20,
-        fontSize: 12,
+        fontSize: 13,
         fontWeight: 'bold',
-        color: '#303030'
+        color: '#white'
     },
     DotsHorizontal: {
-        marginLeft: 70,
         padding: 5,
     },
     Images: {
