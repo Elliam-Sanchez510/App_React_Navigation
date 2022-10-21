@@ -39,10 +39,10 @@ function MyTabs() {
                 }}
             />
             <Tab.Screen
-                name="Notification"
+                name="Recipe detail"
                 component={NotificationScreen}
                 options={{
-                    tabBarLabel: 'Notification',
+                    tabBarLabel: 'Recipe detail',
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons name="bell-outline" size={24} color={color} />
                     ),
