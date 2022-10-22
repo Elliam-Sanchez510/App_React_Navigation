@@ -2,7 +2,11 @@ import { ScrollView, StyleSheet, Text, View,} from 'react-native';
 
 const Profile = () => {
     return (
-        <Text>Hello worl</Text>
+        <ScrollView>
+            <View>
+                
+            </View>
+        </ScrollView>
     )
 }
 export default Profile;
