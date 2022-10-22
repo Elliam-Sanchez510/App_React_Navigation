@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   principalText: {
-    fontSize: 22,
+    fontSize: 23,
     fontWeight: "bold",
   },
   containerB: {

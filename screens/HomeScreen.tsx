@@ -12,6 +12,7 @@ import { SeeAll } from "../Components/homeComponents/SeeAll";
 import { TrendImage } from "../Components/homeComponents/TrendImage";
 import { PopularCreators } from "../Components/homeComponents/PopularCreators";
 import { RecentFoodImag } from "../Components/homeComponents/RecentFoodImag";
+import { PopularCategoryImg } from "../Components/homeComponents/PopularCategoryImg";
 
 const HomeScreen = () => {
   return (
@@ -41,20 +42,34 @@ const HomeScreen = () => {
         <View style={styles.category}>
           <Text style={styles.textCategory}>Salad</Text>
           <View style={styles.containerCategoryRed}>
-            <Text style={{ color: "#fff" }}>Breakfast</Text>
+            <Text style={{ color: "#fff", marginLeft: 10 }}>Breakfast</Text>
           </View>
           <Text style={styles.textCategory}>Appetizer</Text>
           <Text style={styles.textCategory}>Noodle</Text>
           <Text style={styles.textCategory}>Noodle</Text>
         </View>
       </ScrollView>
-      {/* <ScrollView
+      <ScrollView
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         style={styles.scrollView}
       >
-        <HomeScreen />
-      </ScrollView> */}
+        <PopularCategoryImg
+          imgSaucer={require("../Image/imgCircle1.png")}
+          textName={"Pepper sweetcorn \nramen"}
+          textMinute={"10 Mins"}
+        />
+        <PopularCategoryImg
+          imgSaucer={require("../Image/imgCircle2.png")}
+          textName={"Pepper sweetcorn \nramen"}
+          textMinute={"20 Mins"}
+        />
+        <PopularCategoryImg
+          imgSaucer={require("../Image/imgCircle1.png")}
+          textName={"Pepper sweetcorn \nramen"}
+          textMinute={"30 Mins"}
+        />
+      </ScrollView>
       <SeeAll text="Recientes" />
 
       <ScrollView
@@ -111,13 +126,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   scrollView: {
-    marginVertical: 17,
+    marginTop: 15,
   },
   textTitleCategory: {
-    fontSize: 20,
+    fontSize: 23,
     fontWeight: "bold",
     marginLeft: 30,
-    marginTop: 2,
+    marginTop: 25,
   },
   category: {
     flexDirection: "row",

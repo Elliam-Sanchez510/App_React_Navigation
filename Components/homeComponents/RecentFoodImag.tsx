@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   },
   containerB: {
     marginRight: 10,
+    marginBottom: 15,
   },
   img: {
     width: 130,
