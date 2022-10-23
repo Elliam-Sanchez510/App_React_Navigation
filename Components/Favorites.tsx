@@ -4,6 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 
+
 const Favorites = () => {
     return (
         <ScrollView>
@@ -12,7 +13,9 @@ const Favorites = () => {
                 <Text style={styles.SaveRecipes}>Recetas guardadas</Text>
 
                 <View style={styles.Container1}>
+                    
                     <TouchableOpacity style={styles.TextVideo}>
+
                         <Text style={styles.TextVideo1}>
                             Video
                         </Text>
@@ -41,7 +44,7 @@ const Favorites = () => {
                         </Text>
                         <View style={styles.BookOutline}>
                             <MaterialCommunityIcons
-                                name="book-outline"
+                                name="bookmark-minus-outline"
                                 style={styles.BookOutline1}
                             />
                         </View>
@@ -96,7 +99,7 @@ const Favorites = () => {
                         </Text>
                         <View style={styles.BookOutline}>
                             <MaterialCommunityIcons
-                                name="book-outline"
+                                name="bookmark-minus-outline"
                                 style={styles.BookOutline1}
                             />
                         </View>
@@ -148,9 +151,12 @@ const Favorites = () => {
                         <Text style={styles.Hexagram1}>
                             4,9
                         </Text>
+                        <TouchableOpacity>
+
+                        </TouchableOpacity>
                         <View style={styles.BookOutline}>
                             <MaterialCommunityIcons
-                                name="book-outline"
+                                name="bookmark-minus-outline"
                                 style={styles.BookOutline1}
                             />
                         </View>

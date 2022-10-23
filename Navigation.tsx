@@ -2,11 +2,14 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from '@expo/vector-icons';
+
 
 import HomeScreen from "./screens/HomeScreen";
 import FavoritesScreen from "./screens/FavoritesScreen";
 import NotificationScreen from "./screens/NotificationScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import AgregarScreen from "./screens/AgregarScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,11 +22,11 @@ function MyTabs() {
       }}
     >
       <Tab.Screen
-        name=" "
+        name="Home"
         component={HomeScreen}
         options={{
-          tabBarLabel: "Home",
-          tabBarIcon: ({ color, size }) => (
+          tabBarLabel: " ",
+          tabBarIcon: ({ color, }) => (
             <MaterialCommunityIcons
               name="home-variant-outline"
               size={24}
@@ -36,21 +39,38 @@ function MyTabs() {
         name="Favorites"
         component={FavoritesScreen}
         options={{
-          tabBarLabel: "Favorites",
-          tabBarIcon: ({ color, size }) => (
+          tabBarLabel: " ",
+          tabBarIcon: ({ color, }) => (
             <MaterialCommunityIcons
-              name="book-outline"
+              name="bookmark-minus-outline"
               size={24}
               color={color}
             />
           ),
         }}
       />
+
+      <Tab.Screen
+        name="Agregar"
+        component={AgregarScreen}
+        options={{
+          tabBarLabel: " ",
+          tabBarIcon: ({ }) => (
+            <FontAwesome5
+              name="plus-circle"
+              size={24}
+              color="red"
+            />
+          ),
+        }}
+
+      />
+
       <Tab.Screen
         name="Notification"
         component={NotificationScreen}
         options={{
-          tabBarLabel: "Notification",
+          tabBarLabel: " ",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="bell-outline"
@@ -65,7 +85,7 @@ function MyTabs() {
         name="Profile"
         component={ProfileScreen}
         options={{
-          tabBarLabel: "Profile",
+          tabBarLabel: " ",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="account-cog-outline"
