@@ -1,10 +1,8 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { FontAwesome5 } from '@expo/vector-icons';
-
-
+import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
+   
 import HomeScreen from "./screens/HomeScreen";
 import FavoritesScreen from "./screens/FavoritesScreen";
 import NotificationScreen from "./screens/NotificationScreen";
@@ -56,10 +54,10 @@ function MyTabs() {
         options={{
           tabBarLabel: " ",
           tabBarIcon: ({ }) => (
-            <FontAwesome5
-              name="plus-circle"
-              size={24}
-              color="red"
+            <Ionicons
+              name="add-circle-sharp"
+              size={35}
+              color="#E23E3E"
             />
           ),
         }}

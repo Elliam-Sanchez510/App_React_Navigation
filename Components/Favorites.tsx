@@ -13,7 +13,7 @@ const Favorites = () => {
                 <Text style={styles.SaveRecipes}>Recetas guardadas</Text>
 
                 <View style={styles.Container1}>
-                    
+
                     <TouchableOpacity style={styles.TextVideo}>
 
                         <Text style={styles.TextVideo1}>
