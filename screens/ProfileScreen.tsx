@@ -3,9 +3,9 @@ import Profile from "../Components/Profile";
 
 
 const ProfileScreen = () => {
-    return(
+    return (
         <Profile/>
     )
 }
 
-export default ProfileScreen
+export default ProfileScreen;

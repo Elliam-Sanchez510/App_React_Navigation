@@ -151,9 +151,7 @@ const Favorites = () => {
                         <Text style={styles.Hexagram1}>
                             4,9
                         </Text>
-                        <TouchableOpacity>
-
-                        </TouchableOpacity>
+                        
                         <View style={styles.BookOutline}>
                             <MaterialCommunityIcons
                                 name="bookmark-minus-outline"
